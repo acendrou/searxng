@@ -2,9 +2,9 @@ name: Integration
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: ["master", "feature-acendrou"]
+    branches: ["master"]
   pull_request:
-    branches: ["master", "feature-acendrou"]
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
@@ -134,11 +134,6 @@ jobs:
 
   dockers:
     name: Docker
-    if: github.ref == 'refs/heads/master'
-    needs:
-      - python
-      - themes
-      - documentation
     env:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
     runs-on: ubuntu-24.04
