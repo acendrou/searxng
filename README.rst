@@ -12,6 +12,8 @@
 
 Privacy-respecting, hackable `metasearch engine`_
 
+custom version by @acendrou.
+
 Searx.space_ lists ready-to-use running instances.
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
