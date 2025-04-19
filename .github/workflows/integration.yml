@@ -2,9 +2,9 @@ name: Integration
 
 on:  # yamllint disable-line rule:truthy
   push:
-    branches: ["master"]
+    branches: ["master", "feature-acendrou"]
   pull_request:
-    branches: ["master"]
+    branches: ["master", "feature-acendrou"]
   workflow_dispatch:
 
 permissions:
